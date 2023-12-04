@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Noticia ultima hora </title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body onload="mostrar()">
+    <div class="grid-container">
+        <div class="topnav">
+            <a href="index.html"><img src="./img/logo(feo).png" class="logo" alt=""></a>
+            <p class="text-topnav" href="#home">HOME</p>
+
+            <!-- <p class="text-topnav" href="#home">HOME</p> -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+                
+            </a>
+        <div id="myLinks">
+            
+            <a class="elemento" href="deportes.html" href="#news">DEPORTES</a> 
+            <a class="elemento" href="educacion.html" href="#contact">EDUCACION</a>
+            <a class="elemento" href="politica.html" href="#about">POLITICA</a>
+            <a class="elemento" href="economia.html" href="#news">ECONOMIA</a> 
+            <a class="elemento" href="agricultura.html" href="" href="#contact">AGRICULTURA</a>
+            <a class="elemento" href="sanidad.html" href="#about">SANIDAD</a>
+        </div> 
+    </div>
+            
+        <div class="div-header">
+            <h1 class="title-header">
+                Educación complementa las ayudas del Ministerio para la exención del pago de las tasas de matrícula universitaria 2022-23
+            </h1>
+            <img class="img-berlin" src="./img/educacion.png">
+            <p class="text-header">
+                La Conselleria destina 1.259.941,96€ para compensar el importe de las becas estatales que no son suficiente para el pago de las tasas de matrícula
+                <br><br>
+                La Conselleria de Educación, Universidades y Empleo ha publicado en el DOGV la concesión de ayudas complementarias a las becas del Ministerio de Educación, Formación Profesional y Deportes para el pago de las tasas universitarias del alumnado que estudia en universidades de la Comunitat Valenciana correspondientes al curso 2022-2023.
+                <br><br>
+                Se ha destinado un importe de 1.259.941,96€ para complementar el pago de las tasas de matrícula de 2.944 alumnos que estudian en las universidades de la Comunitat Valenciana quedando exentos de ese pago.
+                <br><br>
+                Como novedad este año se ha incluido por primera vez a las universidades privadas en esta convocatoria de ayudas para que todo el alumnado, sin importar la universidad en la que estudien, tengan las mismas oportunidades.
+                <br><br>
+                El director general de Universidades, José Antonio Pérez, ha señalado que “la Conselleria de Educación, Universidades y Empleo a través de estas ayudas quiere facilitar a los estudiantes universitarios los gastos de sus estudios, en concreto la tasa de matrícula”.
+                <br><br>
+                “Estas ayudas se suman a otras becas y ayudas al estudio que a través de la Secretaría Autonómica de Universidades se otorgan para facilitar el acceso de los ciudadanos a los estudios universitarios” ha indicado el director general de Universidades.
+            </p>
+        </div>
+    
+        <div class="div-pub">
+                <img class="img-pub" src="./img/kia-y-rafa-nadal.jpg" alt="#">
+                <img style="padding-bottom: 10px; padding-top: 20px;" class="img-pub-2" src="./img/pub-2.png" alt="">
+                <img class="img-pub-2" src="./img/pub-2.png" alt="">
+        </div>
+        
+        <div class="div-footer">
+            <p class="text-footer">
+                <div class="cell-footer">
+                    <a href="https://www.facebook.com/"><img class="logo-footer" src="./img/icon-faceb.png" alt=""></a>
+                    <a href="https://www.instagram.com/"><img class="logo-footer" src="./img/icon-inst.png" alt=""></a>
+                    <a href="https://www.iesemilidarder.com/"><img class="logo-footer" src="./img/icon-x.png" alt=""></a>
+                </div>
+                
+        </div>
+    </div>
+    
+    
+    <script>
+
+        // function mostrar(){
+        //     alert("SUBSCRIBETE A NUESTRA PAGINA PARA RECIBIR TODAS LAS NOTICIAS Benja ATENTO con el pedazo RESPONSIVE");
+        // }
+
+        function myFunction() {        
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+    }    
+    </script>
+</body>
+</html>

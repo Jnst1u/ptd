@@ -32,7 +32,7 @@
 
 .logo{
     width: 95px;
-    
+
 }
 
 .topnav a:hover {
@@ -41,12 +41,7 @@
 }
 
 .text-topnav{
-    text-align: center;
-    font-size: larger;
-    color: black;
-    display: inline-block;
-    position: absolute;
-    top:50px;
+    display: none;
 }
 
 .mobile-container{
@@ -73,6 +68,7 @@
 
 .text-header{
     text-align: justify;
+    font-size: 1.5rem
 }
 
 /*              GRID PUB                        */
@@ -140,23 +136,21 @@
             display: block;
         } */
     .img-berlin{
-        margin-left: 0%;
+        margin-left: 10%;
         margin-right: 0%;
-        width: 100%;
-        height: 75%;
+        width: 75%;
     }
     .logo{
         margin-left: 0%;
         display: inline-block;
     }
     .div-pub{
-        margin-left: none;
-        margin-right: none;
+        width: 200px;
+        margin-right: 10px;
     }
     .img-pub-2{
         display:block;
-        width: auto;
-        height: 20%;
+        width: 100%;
     }
     .img-pub{
         display: none;
@@ -168,6 +162,9 @@
     .topnav a.icon{
         display: none;
     }
+    .text-topnav{
+        display: none;
+    }
     .topnav{
         grid-area: topnav;
     }
@@ -176,5 +173,9 @@
         margin-right: 0%;
         width: 100%;
         grid-area: header;
+    }
+    .text-header{
+        text-align: justify;
+        font-size: 1.5rem
     }
 }

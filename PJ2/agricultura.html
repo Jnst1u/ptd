@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Noticia ultima hora </title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body onload="mostrar()">
+    <div class="grid-container">
+        <div class="topnav">
+            <a href="index.html"><img src="./img/logo(feo).png" class="logo" alt=""></a>
+            <p class="text-topnav" href="#home">HOME</p>
+
+            <!-- <p class="text-topnav" href="#home">HOME</p> -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+                
+            </a>
+        <div id="myLinks">
+            
+            <a class="elemento" href="deportes.html" href="#news">DEPORTES</a> 
+            <a class="elemento" href="educacion.html" href="#contact">EDUCACION</a>
+            <a class="elemento" href="politica.html" href="#about">POLITICA</a>
+            <a class="elemento" href="economia.html" href="#news">ECONOMIA</a> 
+            <a class="elemento" href="agricultura.html" href="" href="#contact">AGRICULTURA</a>
+            <a class="elemento" href="sanidad.html" href="#about">SANIDAD</a>
+        </div> 
+    </div>
+            
+        <div class="div-header">
+            <h1 class="title-header">
+                Toni Pérez anima al consumo de la alcachofa de la Vega Baja, «joya y embajadora de nuestra tierra»
+            </h1>
+            <img class="img-berlin" src="./img/agricultura.jpg">
+            <p class="text-header">
+                El presidente de la Diputación de Alicante, Toni Pérez, ha participado esta mañana en Daya Vieja en el corte simbólico con el que arranca la campaña de recolección de la alcachofa de la Vega Baja, un producto «de gran calidad y exquisito sabor» que este año prevé alcanzar unas 20.000 toneladas de producción, un 25% menos debido a la escasez de lluvias y el exceso de calor.
+                <br><br>
+                Durante su intervención, el presidente ha reiterado el compromiso de la institución con esta hortaliza, que ha definido como «la joya de la huerta del Bajo Segura», así como con la defensa de los intereses hídricos del territorio. «Nuestra conjura tiene que ser por el agua que necesitamos y que, en justicia, nos toca. Y esa reivindicación tiene que ser permanente y la vamos a hacer por Daya Vieja, por la Vaga Baja y por la provincia de Alicante», ha señalado.
+            </p>
+        </div>
+    
+        <div class="div-pub">
+                <img class="img-pub" src="./img/kia-y-rafa-nadal.jpg" alt="#">
+                <img style="padding-bottom: 10px; padding-top: 20px;" class="img-pub-2" src="./img/pub-2.png" alt="">
+                <img class="img-pub-2" src="./img/pub-2.png" alt="">
+        </div>
+        
+        <div class="div-footer">
+            <p class="text-footer">
+                <div class="cell-footer">
+                    <a href="https://www.facebook.com/"><img class="logo-footer" src="./img/icon-faceb.png" alt=""></a>
+                    <a href="https://www.instagram.com/"><img class="logo-footer" src="./img/icon-inst.png" alt=""></a>
+                    <a href="https://www.iesemilidarder.com/"><img class="logo-footer" src="./img/icon-x.png" alt=""></a>
+                </div>
+                
+        </div>
+    </div>
+    
+    
+    <script>
+
+        // function mostrar(){
+        //     alert("SUBSCRIBETE A NUESTRA PAGINA PARA RECIBIR TODAS LAS NOTICIAS Benja ATENTO con el pedazo RESPONSIVE");
+        // }
+
+        function myFunction() {        
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+    }    
+    </script>
+</body>
+</html>

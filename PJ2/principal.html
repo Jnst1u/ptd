@@ -1,13 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEWS</title>
-</head> 
+    <title>BrunoJustin News Hub</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
 <body>
-    <div class="banner">
-        <img src="" class="img_principal">
-    </div>
+
+    <h1 style="text-align: center;">BrunoJustin News Hub</h1>
+        <section class="hero__main container">
+                <button href="#" class="hero__cta">SUSCRIBIRSE</button>
+        </section>
+
+    <section class="modal ">
+        <div class="modal__container">
+            
+            <h2 class="modal__title">¡Bienvenido a BrunoJustin News Hub!</h2>
+            <p class="modal__paragraph">
+                No te pierdas las noticias más recientes y relevantes. Suscríbete ahora para acceder a actualizaciones de última hora y estar siempre bien informado. ¡No esperes, únete hoy mismo!</p>
+            <a href="index.html";" class="modal__close">ENTRAR</a>
+        </div>
+    </section>
+
+    <script>
+        
+            const openModal = document.querySelector('.hero__cta');
+            const modal = document.querySelector('.modal');
+            const closeModal = document.querySelector('.modal__close'); 
+            
+
+            openModal.addEventListener('click', (e)=>{
+            e.preventDefault();
+            modal.classList.add('modal--show');
+            });
+
+            closeModal.addEventListener('click', (e)=>{
+            e.preventDefault();
+            modal.classList.remove('modal--show');
+            window.location="index.html";
+});
+        
+    </script>
+
+    <style>
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .9s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+}
+
+.modal--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
+}
+
+.modal__container{
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition:var(--transition);
+}
+
+.modal__title{
+    font-size: 2.5rem;
+}
+
+.modal__paragraph{
+    margin-bottom: 10px;
+}
+
+
+.modal__close{
+    text-decoration: none;
+    color: #fff;
+    background-color: #F26250;
+    padding: 1em 3em;
+    border: 1px solid ;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 300;
+    transition: background-color .3s;
+}
+
+.modal__close:hover{
+    color: #F26250;
+    background-color: #fff;
+}
+
+.hero__cta{
+    display: block;
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    padding: 50px 50px;
+}
+
+@media only screen and (min-width:650px) {
+    .hero__cta{
+    display: block;
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    padding: 100px 350px;
+}
+}
+
+    </style>
 </body>
 </html>

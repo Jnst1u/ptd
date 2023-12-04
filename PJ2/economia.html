@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Noticia ultima hora </title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body onload="mostrar()">
+    <div class="grid-container">
+        <div class="topnav">
+            <a href="index.html"><img src="./img/logo(feo).png" class="logo" alt=""></a>
+            <p class="text-topnav" href="#home">HOME</p>
+
+            <!-- <p class="text-topnav" href="#home">HOME</p> -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+                
+            </a>
+        <div id="myLinks">
+            
+            <a class="elemento" href="deportes.html" href="#news">DEPORTES</a> 
+            <a class="elemento" href="educacion.html" href="#contact">EDUCACION</a>
+            <a class="elemento" href="politica.html" href="#about">POLITICA</a>
+            <a class="elemento" href="economia.html" href="#news">ECONOMIA</a> 
+            <a class="elemento" href="agricultura.html" href="" href="#contact">AGRICULTURA</a>
+            <a class="elemento" href="sanidad.html" href="#about">SANIDAD</a>
+        </div> 
+    </div>
+            
+        <div class="div-header">
+            <h1 class="title-header">
+                Jóvenes e inversión, un binomio posible (pero con precaución)
+            </h1>
+            <img class="img-berlin" src="./img/economia.jpg">
+            <p class="text-header">
+                Hay cuatro preguntas básicas que todo potencial inversor debe hacerse antes de dar el paso: cuándo, cuánto, cómo y dónde. Estas preguntas pueden ayudar a despejar el camino ante las dudas que para los no experimentados pueden surgir a la hora de tomar la decisión de invertir los ahorros.
+                <br><br>
+                Para responder al cuándo se puede recurrir al tópico de cuando se pueda, un axioma de sentido común que Gloria Caballero, subdirectora de Educación Financiera de la Comisión Nacional del Mercado de Valores (CNMV), desarrolla: “Antes de tomar cualquier decisión es importante contar con una situación financiera saneada y no invertirse los fondos que se puedan necesitar a corto plazo”.
+                <br><br>
+                En términos generales, los jóvenes suelen tener menos capacidad de ahorro y, por tanto, de inversión. Sin embargo, la generalidad no debe suponer olvidar a un colectivo que sin la educación financiera adecuada puede caer en productos no recomendados o con un riesgo que no puedan asumir.
+                <br><br>
+                Asesorarse sólo con expertos
+                Hay consejos intergeneracionales para saber cómo invertir. Entre esos tips esenciales está no adquirir productos que no se entiendan o desconfiar de ofertas que aseguren grandes rentabilidades, entre otros. Dentro de las recomendaciones específicas para jóvenes inversores, Caballero señala que “nunca inviertan tomando como referencia únicamente consejos publicados en redes sociales. Los influencers financieros hablan de acciones y valores, pero hay un riesgo de que la información que transmiten no sea la adecuada ya que, en muchos casos, no están cualificados para ello”.
+                <br><br>
+                Una buena garantía a la hora de elegir dónde invertimos nuestros ahorros es acudir únicamente a intermediarios financieros registrados y autorizados por el Banco de España o por la propia CNMV para prestar esos servicios.
+            </p>
+        </div>
+    
+        <div class="div-pub">
+                <img class="img-pub" src="./img/kia-y-rafa-nadal.jpg" alt="#">
+                <img style="padding-bottom: 10px; padding-top: 20px;" class="img-pub-2" src="./img/pub-2.png" alt="">
+                <img class="img-pub-2" src="./img/pub-2.png" alt="">
+        </div>
+        
+        <div class="div-footer">
+            <p class="text-footer">
+                <div class="cell-footer">
+                    <a href="https://www.facebook.com/"><img class="logo-footer" src="./img/icon-faceb.png" alt=""></a>
+                    <a href="https://www.instagram.com/"><img class="logo-footer" src="./img/icon-inst.png" alt=""></a>
+                    <a href="https://www.iesemilidarder.com/"><img class="logo-footer" src="./img/icon-x.png" alt=""></a>
+                </div>
+                
+        </div>
+    </div>
+    
+    
+    <script>
+
+        // function mostrar(){
+        //     alert("SUBSCRIBETE A NUESTRA PAGINA PARA RECIBIR TODAS LAS NOTICIAS Benja ATENTO con el pedazo RESPONSIVE");
+        // }
+
+        function myFunction() {        
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+    }    
+    </script>
+</body>
+</html>
